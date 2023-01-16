@@ -17,7 +17,6 @@
 * Ajouter dans les dépendances de Python l'utilitaire pylint
 * Construire l'image et la taguer avec le nom que vous souhaitez
 
-
 ## Lancement du linter
 
 * Lancer un conteneur à partir de l'image créé
