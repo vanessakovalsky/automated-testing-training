@@ -23,8 +23,8 @@
 * Ouvrir un bash sur le conteneur 
 * Lancer pylint sur l'application : 
 ```
-cd /app
-pylint *.py
+cd /
+pylint /app/
 ```
 * Vous obtiendrez alors un retour vous indiquant si des erreurs sont présentes dans votre code
 
