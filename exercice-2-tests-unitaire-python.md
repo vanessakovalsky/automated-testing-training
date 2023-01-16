@@ -4,17 +4,11 @@
 
 * Avoir suivi l'exercice 1
 
-## Installation de pyTest
-
-* Ajouter dans les dépendances de Python le module `pytest`
-* Construire l'image avec cette nouvelle dépendance
-* Lancer un conteneur à partir de cette nouvelles images
-* Se connecter dans le conteneur en bash et vérifier que la commande pytest fonctionne
 
 ## Ecriture des tests
 
-* Dans le dossier app/tests un fichier test.py existe déjà
-* Importer pytest
+* Dans le dossier app/ créer un fichier test.py
+* Importer unittest
 * Ecrire un premier test qui va vérifier que la fonction add de la class application, renvoie bien comme valeur 'Application ajoutée' 
 * Pour vous aider la documentation pour l'écriture des tests est ici : https://docs.pytest.org/en/7.2.x/how-to/assert.html 
 
