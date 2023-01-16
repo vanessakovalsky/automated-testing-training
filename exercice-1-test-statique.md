@@ -24,7 +24,7 @@
 * Lancer pylint sur l'application : 
 ```
 cd /app
-pylint .
+pylint *.py
 ```
 * Vous obtiendrez alors un retour vous indiquant si des erreurs sont présentes dans votre code
 
