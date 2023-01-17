@@ -14,7 +14,7 @@ Cet exercice a pour objectif
 ## Installation et configuration d'un projet de test
 
 * Créer un projet vierge dans votre environnement de développement
-* Pour fonctionner Selenium a besoin d'accéder à un navigateur, pour cela nous utilisons une image docker (adapter le chemin du volume pour le faire correspondre à votre projet): 
+* Pour fonctionner Selenium a besoin d'accéder à un navigateur, pour cela nous utilisons une image docker: 
 ```
 docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-firefox:4.7.2-20221219
 ```
