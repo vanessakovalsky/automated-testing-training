@@ -25,18 +25,18 @@ Cet exercice a pour objectifs :
 * Pour cela on utilise la méthode GET et l'url fournie ci-dessus, aucun paramètre n'est nécessaire
 * On obtient alors une liste de jeux 
 
-![](images/exo1/getjeux.png)
+![](https://github.com/vanessakovalsky/postman-training/raw/main/images/exo1/getjeux.png)
 
 * Vous pouvez alors executer une nouvelle requête pour obtenir une liste des utilisateurs sur l'URL : https://virtserver.swaggerhub.com/vanessakovalsky/BoardgamesV3/1.2/utilisateurs
 
-![](images/exo1/getusers.png)
+![](https://github.com/vanessakovalsky/postman-training/raw/main/images/exo1/getusers.png)
 
 ## Utiliser les paramètres de requêtes
 
 * On va maintenant aller récupérer un jeu spécifique à partir de son ID.
 * Pour cela créer une nouvelle requête identique à celle pour la liste des jeux, et ajouter dans l'url, parmi la liste des identifiants disponibles dans la liste des jeux que vous avez obtenu à l'étape précédente 
 
-![](images/exo1/getjeubyid.png)
+![](https://github.com/vanessakovalsky/postman-training/raw/main/images/exo1/getjeubyid.png)
 
 ## Enregistrer ses requêtes dans une collection
 
@@ -44,17 +44,17 @@ Cet exercice a pour objectifs :
 * Pour cela dans le menu collection cliquer sur `+`
 * Donner un nom à votre collection, dans l'exemple : `Boardgames`
 
-![](images/exo1/addcollection.png)
+![](https://github.com/vanessakovalsky/postman-training/raw/main/images/exo1/addcollection.png)
 
 * Une fois la collection créé, revenir sur le premier onglet de notre première requête
 * Cliquer sur `Save` pour enregistrer la requête, donner lui un nom, puis selectionner la collection que vous avez créé
 
-![](images/exo1/saverequest.png)
+![](https://github.com/vanessakovalsky/postman-training/raw/main/images/exo1/saverequest.png)
 
 * Faites de mêmes pour les deux autres requêtes que nous avons executées.
 * Vous pouvez maintenant retrouver vos requêtes dans votre collections
 
-![](images/exo1/collectionboardgames.png)
+![](https://github.com/vanessakovalsky/postman-training/raw/main/images/exo1/collectionboardgames.png)
 
 -> Félicitations vous savez maintenant créer des requêtes et les exécuter, et sauvegarder vos requête dans une collection
 
