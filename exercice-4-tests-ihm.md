@@ -16,8 +16,9 @@ Cet exercice a pour objectif
 * Créer un projet vierge dans votre environnement de développement
 * Pour fonctionner Selenium a besoin d'accéder à un navigateur, pour cela nous utilisons une image docker (adapter le chemin du volume pour le faire correspondre à votre projet): 
 ```
-docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-firefox:4.7.2-20221219
 ```
+
 * Dans votre projet, créer un fichier requirements.txt avec le contenu suivant
 ```
 selenium
@@ -34,13 +35,14 @@ from selenium import webdriver
 class GoogleTestCase(unittest.TestCase):
 
     def setUp(self):
-        """Explicitly create a Chrome browser instance."""
+        """Explicitly create a browser instance."""
         print("Test Execution Started")
         options = webdriver.ChromeOptions()
         options.add_argument('--ignore-ssl-errors=yes')
         options.add_argument('--ignore-certificate-errors')
         self.browser = webdriver.Remote(
-        command_executor='http://localhost:4444/wd/hub',
+            desired_capabilities=webdriver.DesiredCapabilities.FIREFOX,
+            command_executor='http://localhost:4444/wd/hub',
             options=options
         )
         self.addCleanup(self.browser.quit)
