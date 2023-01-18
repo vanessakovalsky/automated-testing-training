@@ -5,10 +5,10 @@ correction/exercice4/result.png
 demo-selenium/geckodriver.log
 demo-selenium/__pycache__/test_test2.cpython-310-pytest-7.1.2.pyc
 .gitignore
-demo_robot/report.html
-demo_robot/geckodriver-2.log
-demo_robot/geckodriver-1.log
-demo_robot/log.html
-demo_robot/output.xml
-demo_robot/selenium-screenshot-*.png
+correction/exercice5/report.html
+correction/exercice5/geckodriver-2.log
+correction/exercice5/geckodriver-1.log
+correction/exercice5/log.html
+correction/exercice5/output.xml
+correction/exercice5/selenium-screenshot-*.png
 correction/exercice2/reports/TestResults___main__.TestDemo_2023-01-18_16-10-30.html
