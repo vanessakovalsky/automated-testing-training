@@ -10,3 +10,4 @@ demo_robot/geckodriver-2.log
 demo_robot/geckodriver-1.log
 demo_robot/log.html
 demo_robot/output.xml
+demo_robot/selenium-screenshot-*.png
