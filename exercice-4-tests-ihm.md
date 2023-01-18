@@ -30,7 +30,13 @@ pip install -r requirements.txt
 * Dans votre projet, créer un fichier testSelenium.py avec le contenu suivant qui permet de configurer le projet et d'exécuter les tests dans votre conteneur:
 ```
 import unittest
+import time
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class GoogleTestCase(unittest.TestCase):
 
@@ -73,13 +79,18 @@ python testSelenium.py
     * Puis assertIn est une fonction de vérification de unittest qui permet de vérifier que le titre de la page du navigateur correpond bien à Google
 * Pour aller plus loin, nous faisons un deuxième test qui va faire une recherche sur le terme Red Hat:
 ```
-    def test_search_page_title(self):
-        """Assert that Google search returns data for 'Red Hat'."""
-        self.browser.get('http://www.google.com')
+      self.browser.get('http://www.google.com')
         self.assertIn('Google', self.browser.title)
-        element = self.browser.find_element(By.ID,'lst-ib')
+        self.browser.save_screenshot('beforecookies.png')
+        WebDriverWait( self.browser, 10).until(EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Tout accepter')]")))
+        self.browser.find_elements(By.XPATH, "//*[contains(text(), 'Tout accepter')]")[1].click() 
+        self.browser.save_screenshot('aftercookies.png')
+        element = self.browser.find_element(By.NAME, "q")
         assert element is not None
-        element.send_keys('Red Hat' + Keys.RETURN)
+        element.send_keys('Red Hat')
+        element.send_keys(Keys.RETURN)
+        time.sleep(5)
+        self.browser.save_screenshot('result.png')
         assert self.browser.title.startswith('Red Hat')
 ```
 * Cette fois ci nous utilisons les fonction qui permette de rechercher un élément dans le HTML par son identifiant, puis la fonction qui permet d'ecrire du texte (send_keys) 
