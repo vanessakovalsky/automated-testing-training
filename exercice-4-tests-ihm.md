@@ -77,7 +77,7 @@ python testSelenium.py
         """Assert that Google search returns data for 'Red Hat'."""
         self.browser.get('http://www.google.com')
         self.assertIn('Google', self.browser.title)
-        element = self.browser.find_element_by_id('lst-ib')
+        element = self.browser.find_element(By.ID,'lst-ib')
         assert element is not None
         element.send_keys('Red Hat' + Keys.RETURN)
         assert self.browser.title.startswith('Red Hat')
