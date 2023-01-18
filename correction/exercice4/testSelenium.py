@@ -27,7 +27,7 @@ class GoogleTestCase(unittest.TestCase):
         """Assert that Google search returns data for 'Red Hat'."""
         self.browser.get('http://www.google.com')
         self.assertIn('Google', self.browser.title)
-        self.browser.save_screenshot('beforecookies.png')
+        self.browser.save_screenshot('beforecookies.png') # Permet de prendre une capture de l'état du navigateur
         WebDriverWait( self.browser, 10).until(EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Tout accepter')]")))
         self.browser.find_elements(By.XPATH, "//*[contains(text(), 'Tout accepter')]")[1].click() 
         self.browser.save_screenshot('aftercookies.png')

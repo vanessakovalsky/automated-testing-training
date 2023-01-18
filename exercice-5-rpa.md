@@ -12,7 +12,7 @@ Cet exercice a pour objectifs
 * avoir un environnement de développement python
 * avoir des tests Selenium écrit en Python
 * Avoir un driver installé pour son navigateur :
-    * Pour chrom : https://chromedriver.chromium.org/downloads 
+    * Pour chrome : https://chromedriver.chromium.org/downloads 
     * Pour firefox : https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/firefox.html 
 
 ## Installation de robot Framework
