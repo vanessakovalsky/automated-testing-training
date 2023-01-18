@@ -8,8 +8,6 @@ ${BROWSER}          Chrome
 ${search_query}     css=input[name=q]
 ${search_term}      Red Hat
 ${CHROMEDRIVER_PATH}        /snap/bin/chromium.chromedriver
-${ACCEPT_COOKIES_BUTTON}   xpath://*[contains(text(), 'Tout accepter')]
-${search_button}                                    css=input.lsb
 
 *** Test Cases ***
 Launch Browser
