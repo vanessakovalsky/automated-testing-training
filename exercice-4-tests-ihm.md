@@ -30,13 +30,8 @@ pip install -r requirements.txt
 * Dans votre projet, créer un fichier testSelenium.py avec le contenu suivant qui permet de configurer le projet et d'exécuter les tests dans votre conteneur:
 ```
 import unittest
-import time
+
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 class GoogleTestCase(unittest.TestCase):
 
